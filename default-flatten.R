@@ -6,12 +6,8 @@ packs <- c("jsonlite", "dplyr", "stringr", "lubridate", "reshape2",
            "doParallel", "data.table")
 package_load(packs)
 
-# Specify Project
-classifications_file <- "wildlife-of-los-angeles-classifications.csv"
-photos_file <-"wildlife-of-los-angeles-subjects.csv"
-
+# Specify file paths that you downloaded from the project builder page
 classifications_file <- "my_classification_csv_from_zooniverse.csv"
-photos_file <- "my_subjects_csv_from_zooniverse.csv"
 
 # Read in the data.
 jdata <- read.csv(classifications_file, stringsAsFactors = FALSE)
